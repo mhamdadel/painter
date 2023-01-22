@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    form {
+      display: table;
+    }
+
+    form>p {
+      display: table-row;
+    }
+
+    label,
+    input {
+      display: table-cell;
+      margin: 5px;
+    }
+
+    canvas {
+      border: 1px solid black;
+      margin-top: 10px;
+    }
+  </style>
+  <title>painter | Muhammed Adel</title>
+</head>
+
+<body>
+  <form action="" id="options">
+    <input type="range" min="1" max="10" step="1" value="1" id="size" name="size" />
+    <input type="color" id="color" name="color" />
+    <input type="button" id="clear" name="clear" value="Clear canvas" />
+    <input type="button" id="free" name="free" value="free" />
+    <input type="button" id="rect" name="rect" value="rect" />
+    <input type="button" id="circle" name="circle" value="circle" />
+    <input type="button" id="es" name="es" value="es to clear certain" />
+  </form>
+  <canvas id="canvas" width="1350" height="500"></canvas>
+
+  <script type="text/javascript" src="script/paint.js"></script>
+  <script type="text/javascript" src="script/index.js"></script>
+</body>
+
+</html>
